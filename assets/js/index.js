@@ -1,6 +1,6 @@
 $(function() {
         // 调用 getUserInfl() 获取用户基本信息
-        getUserInfl()
+        getUserInfo()
         var layer = layui.layer
             // 点击按钮，实现退出功能
         $('#btnLogout').on('click', function() {
@@ -20,7 +20,7 @@ $(function() {
         })
     })
     // 获取用户的基本信息
-function getUserInfl() {
+function getUserInfo() {
     $.ajax({
         method: 'GET',
         url: '/my/userinfo',
